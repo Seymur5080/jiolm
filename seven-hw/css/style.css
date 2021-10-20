@@ -1,0 +1,371 @@
+/* ---------------FONTS--------------- */
+/* ---------------OPEN SANS--------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* ---------------RALEWAY--------------- */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ---------------RESET CSS STYLE--------------- */
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+/* ---------------GENERAL CSS STYLE--------------- */
+.greenLine {
+   width: 100%;
+   height: 10px;
+   background-color: #2dcb71;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+:root {
+   --opensans: 'Open Sans', sans-serif;
+   --raleway: 'Raleway', sans-serif;
+}
+
+/* ---------------HEADRER CSS STYLE--------------- */
+.header {
+   background: url('../img/header/background.png') no-repeat;
+   background-size: cover;
+}
+
+.header_body {
+   padding: 179px 0 180px 0;
+   background: url('../img/header/hand.png') right bottom no-repeat;
+}
+
+.header_body img {
+   margin-left: 130px;
+}
+
+.header_p {
+   max-width: 469px;
+   margin: 36px 0 0 130px;
+
+   font: 500 24px var(--opensans);
+   line-height: 36px;
+   color: #ffffff;
+}
+
+.header_social {
+   margin: 36px 0 0 130px;
+}
+
+.header_social a {
+   display: inline-block;
+   width: 53px;
+   height: 53px;
+
+   border-radius: 50%;
+   background-color: #000;
+   opacity: 0.5;
+   transition: all 0.5s ease;
+
+   position: relative;
+}
+
+.header_social a:hover {
+   background-color: #2ecc71;
+   opacity: 1;
+}
+
+.header_social a:active {
+   background-color: #23a559;
+   opacity: 1;
+}
+
+.header_social a i {
+   font-size: 24px;
+   color: #fff;
+
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+
+/* ---------------ONE-PAGE CSS STYLE--------------- */
+.one-page {
+   padding: 60px 0;
+}
+
+.one-page_flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10px;
+}
+
+.one-page_container {
+   width: 350px;
+}
+
+.one-page_icons {
+   display: block;
+   margin: 0 auto;
+   width: 95px;
+   height: 95px;
+   border-radius: 50%;
+   background-color: #2dcb71;
+
+   position: relative;
+}
+
+.one-page_icons img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.one-page_title {
+   margin-top: 30px;
+
+   font: 700 22px var(--raleway);
+   text-align: center;
+   line-height: 18px;
+   color: #222222;
+}
+
+.one-page_p {
+   margin-top: 30px;
+
+   font-size: 16px;
+   line-height: 26px;
+   text-align: center;
+   color: #848484;
+   font-family: 'Open Sans', sans-serif;
+}
+
+/* ---------------TWO-PAGE CSS STYLE--------------- */
+
+.two-page {
+   padding: 60px 0;
+
+   background-color: #e3e3e3;
+}
+
+.two-page_flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10px;
+}
+
+.two-page_h2 {
+   font: 700 22px var(--raleway);
+   line-height: 18px;
+   color: #222222;
+}
+
+.two-page_p {
+   max-width: 533px;
+   margin-top: 25px;
+   padding: 0;
+
+   font-size: 15px;
+   line-height: 26px;
+   color: #848484;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.left_flex {
+   margin-top: 29px;
+   display: flex;
+}
+
+.left_input {
+   width: 305px;
+   height: 56px;
+   border-radius: 15px 0 0 15px;
+   padding: 22px 0 22px 26px;
+
+   outline: none;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   color: #848484;
+   
+}
+
+.left_button {
+   width: 141px;
+   height: 56px;
+
+   font: 700 22px var(--raleway);
+   color: #ffffff;
+
+   background-color: #2dcb71;
+   border-radius: 0 15px 15px 0;
+
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+
+.left_button:hover {
+   background-color: #25ac5f;
+}
+
+.left_button:active {
+   background-color: #209954;
+}
+
+/* ---------------THREE-PAGE CSS STYLE--------------- */
+.three-page {
+   padding: 60px 0;
+}
+
+.three-page_p {
+   width: 825px;
+   display: block;
+   margin: 0 auto;
+
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   font-style: italic;
+   line-height: 30px;
+   color: #848484;
+}
+
+.three-page_h2 {
+   margin-top: 26px;
+
+   font: 700 18px var(--raleway);
+   line-height: 20px;
+   text-align: center;
+   color: #2e2e2e;
+}
+
+.three-page_flex {
+   width: 1040px;
+   margin: 0 auto;
+   margin-top: 29px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.flex_box img {
+   opacity: 1;
+   background-color: #2ecc71;
+}
+
+.flex_box img:hover {
+   opacity: 0.5;
+   background-color: #2ecc71;
+}
+
+.three-page_h3 {
+   margin-top: 59px;
+
+   font: 600 24px var(--raleway);
+   line-height: 24px;
+   text-align: center;
+   color: #000000;
+}
+
+.three-page_p2 {
+   margin-top: 21px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   line-height: 26px;
+   color: #848484;
+   text-align: center;
+}
+
+.three-page .header_social a {
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+
+   border-radius: 50%;
+   background-color: #d4d4d4;
+   transition: all 0.5s ease;
+
+   position: relative;
+}
+
+.social__flex {
+   width: 260px;
+   margin: 0 auto;
+   margin-top: 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+.social {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+
+   background-color: #d4d4d4;
+
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+
+.social a {
+   text-decoration: none;
+}
+
+.social i {
+   display: block;
+   margin: 0 auto;
+   
+   font-size: 17px;
+   color: white;
+} 
+
+.social:hover {
+   background-color: #62d895;
+}
+
+.social:active {
+   background-color: #54bd81;
+}
+
+/* ---------------FOOTER CSS STYLE--------------- */
+.footer {
+   padding: 50px 0;
+
+   background-color: #e3e3e3;
+}
+
+.footer_ul {
+   width: 544px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   list-style-type: none;
+}
+
+.footer_ul a {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   line-height: 26px;
+   color: #848484;
+   text-decoration: none;
+
+   transition: all 0.5s ease;
+}
+
+.footer_ul a:hover {
+   color: #2DCB71;
+}
+
+.footer_ul a:active {
+   color: #54bd81;
+}
